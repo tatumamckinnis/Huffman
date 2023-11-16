@@ -86,18 +86,18 @@ This leads to the following pseudocode to read the tree:
 
 ``` java
 private HuffNode readTree(BitInputStream in) {
-bit = in.readBits(1);
-if (bit == -1) throw exception
-if (bit == 0) {
-    left = readTree(...)
-    right = readTree(...)
-    return new HuffNode(0,0,left,right);
-}
-else {
-    value = read BITS_PER_WORD+1 bits from input
-    return new HuffNode(value,0,null,null);
-    }
-}
+        bit = in.readBits(1);
+        if (bit == -1) throw exception
+        if (bit == 0) {
+                left = readTree(...)
+                right = readTree(...)
+                 return new HuffNode(0,0,left,right);
+        }
+        else {
+            value = read BITS_PER_WORD+1 bits from input
+            return new HuffNode(value,0,null,null);
+        }
+  }
 ``` 
 
 For example, the tree below corresponds to the bit sequence `0001X1Y01Z1W01A1B`, with each letter representing a 9-bit sequence to be stored in a leaf as shown in the tree to the right. You'll read these 9-bit chunks with an appropriate call of `readBits`. Rather than use 9, you should use `BITS_PER_WORD + 1`, the +1 is needed since one leaf stores `PSEUDO_EOF` so all leaf nodes store a 9-bit value. See the [appendix](#appendix-how-the-tree-in-decompress-was-generated) for a detailed explanation on how this tree was constructed.
