@@ -54,7 +54,7 @@ The only methods you will need to interact with are the following:
 2. `void BitInputStream.reset()`: This method repositions the “cursor” to the beginning of the input file.
 3. `void BitOutputStream.writeBits(int numBits, int value)`: This method writes the least-significant `numBits` bits of the value to the output file.
 
-## Details on CLI diff
+## Details on diff via the command line interface (CLI)
 
 There is a mac/unix command `diff` you can run in a terminal/bash shell on Mac/Windows (including the built-in terminal in VS Code). This command-line (CLI) `diff`  compares two files and indicates if they are the same bit-for-bit or not. First you must navigate to the directory/folder containing the files you would like to compare. You can use the following commands to navigate directories in your terminal:
 
