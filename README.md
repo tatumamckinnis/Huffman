@@ -13,7 +13,6 @@ You are STRONGLY encouraged to work with a partner on 6! (as you were on P5 and 
 - [Part 2: Implementing `HuffProcessor.compress`](#part-2-implementing-huffprocessorcompress)
 - [Analysis](#analysis)
 - [Submitting and Grading](#submitting-and-grading)
-- [Appendix: How the Tree in `decompress` was generated](#appendix-how-the-tree-in-decompress-was-generated)
 
 ## Project Introduction
 
