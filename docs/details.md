@@ -69,7 +69,7 @@ If the files are the same _nothing is printed_. If the files are different there
 ## Outline of decompress method
 
 <div align="center">
-  <img width="837" height="254" src="p5-figures/decompress.png">
+  <img width="837" height="254" src="p6-figures/decompress.png">
 </div>
 
 To understand this in more detail, please review the explanation in the [Huffman coding writeup](https://www2.cs.duke.edu/csed/poop/huff/info/) -- in particular you'll need to know how the tree was written to write code that reads the tree back.
@@ -105,7 +105,7 @@ For example, the tree below corresponds to the bit sequence `0001X1Y01Z1W01A1B`,
 #### Example Tree
 
 <div align="center">
-  <img width="291" height="213" src="p5-figures/huffheadtreeNODES.png">
+  <img width="291" height="213" src="p6-figures/huffheadtreeNODES.png">
 </div>
 
 
