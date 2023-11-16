@@ -1,4 +1,4 @@
-6# Details for P6 Huffman Coding
+# Details for P6 Huffman Coding
 
 ## Starter Code and Using Git
 **_You should have installed all software (Java, Git, VS Code) before completing this project._** You can find the [directions for installation here](https://coursework.cs.duke.edu/201fall23/resources-201/-/blob/main/installingSoftware.md) (including workarounds for submitting without Git if needed).
