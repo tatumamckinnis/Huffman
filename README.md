@@ -79,7 +79,7 @@ There are five conceptual steps to compress a file using Huffman coding. You do 
 You won't need to throw exceptions for the steps outlined. A brief description of each step follows. More details can be found in the explanation of the Huffman algorithm in the [Huffman coding writeup](https://www.cs.duke.edu/csed/poop/huff/info/).
 
 <div align="center">
-  <img width="600" height="180" src="p5-figures/newcompress.png">
+  <img width="600" height="180" src="p6-figures/newcompress.png">
 </div>
 
 ### Determining Frequencies (private int[] getCounts)
