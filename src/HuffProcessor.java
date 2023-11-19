@@ -63,7 +63,8 @@ public class HuffProcessor {
 	 *            Buffered bit stream writing to the output file.
 	 */
 public void compress(BitInputStream in, BitOutputStream out){
-		int [] counts = getCounts (in); 
+		int [] counts = new int [1+ ALPH_SIZE];
+		counts = getCounts (in); 
 		HuffNode root = makeTree(counts); 
 		in.reset();
 		out.writeBits(BITS_PER_INT, HUFF_TREE);
