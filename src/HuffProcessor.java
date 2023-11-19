@@ -140,7 +140,7 @@ private HuffProcessor.HuffNode makeTree(int[] counts) {
 	}
 
 	private int[] getCounts(BitInputStream in) {
-		int [] vals = new int [ALPH_SIZE]; 
+		int [] vals = new int [ALPH_SIZE+1]; 
 		int bits = in.readBits(BITS_PER_WORD);
 
 		while (bits != -1) 
