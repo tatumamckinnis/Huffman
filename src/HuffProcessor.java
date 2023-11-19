@@ -96,7 +96,7 @@ public void compress(BitInputStream in, BitOutputStream out){
 	}
 
 private void makeEncodings(HuffProcessor.HuffNode node, String s, String[] encodings) {
-	if (node.right == null && node.right == null)
+	if (node.left == null && node.right == null)
 	{
 		encodings[ node.value] = s; 
 	}
