@@ -100,8 +100,8 @@ private void makeEncodings(HuffProcessor.HuffNode node, String s, String[] encod
 	{
 		encodings[ node.value] = s; 
 	}
-	makeEncodings(node.left, s+ 0, encodings); 
-	makeEncodings(node.right, s+ 1, encodings); 
+	makeEncodings(node.left, s+ "0", encodings); 
+	makeEncodings(node.right, s+ "1", encodings); 
 
 	}
 
